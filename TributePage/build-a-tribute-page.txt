@@ -1,0 +1,136 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main id="main">
+      <h1 id="title">John Williams</h1>
+      <p>The Composer of some of our best loved film scores</p>
+      <figure id="img-div">
+        <img
+          id="image"
+          src="https://img.apmcdn.org/72386bc86ecffda3f6e172c6a4c637030327a4e6/normal/9a4ca0-20151026-john-williams.jpg"
+          alt="Composer John Williams conducting an orchestra performing one of his many masterpieces"
+        />
+        <figcaption id="img-caption">
+          Composer John Williams conducting an orchestra performing one of his many masterpieces
+        </figcaption>
+        </figure>
+        <section id="tribute-info">
+          <h3 id="headline">Here is a list of some of John Williams' well known film music scores :</h3>
+          <ul>
+            <li><strong>1975</strong> Jaws</li>
+            <li><strong>1978</strong> Superman</li>
+            <li><strong>1980</strong> The Empire Strikes Back</li>
+            <li><strong>1981</strong> Raiders of the Lost Ark</li>
+            <li><strong>1982</strong> E.T The Extra Terrestrial</li>
+            <li><strong>1993</strong> Jurassic Park</li>
+            <li><strong>1994</strong> Schindler's List</li>
+            <li><strong>1997</strong> Seven Years in Tibet</li>
+            <li><strong>1998</strong> Saving Private Ryan</li>
+            <li><strong>2001</strong> Harry Potter and the Philospher's Stone</li>
+          </ul>
+          
+        <h3>
+          You can find more information about the music of John Williams at
+          <a
+            id="tribute-link"
+            href="https://en.wikipedia.org/wiki/John_Williams"
+            target="_blank"
+            >Wikipedia</a
+          >.
+        </h3>
+      </section>
+    </main>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+*{
+
+    background-color: #383838;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:#e4e4e4;
+
+    text-align: center;
+}
+
+body{
+    margin:0%;
+}
+
+main{
+    margin:0px;
+}
+
+#title{  
+  text-align: center;
+}
+
+p{
+    text-align: center;
+    color: rgb(185, 185, 185);
+    font-size: 1.2rem;
+}
+
+#img-caption{
+    background-color: #e4e4e4;
+    color:#383838;
+    font-size: 1.2rem;
+    margin:0px 20px;
+    padding:10px;
+}
+
+#image{
+    border-radius: 10px;
+    margin:0 auto;
+    display: block;
+    max-width: 100%;
+}
+
+#img-div{
+    margin:0 auto;
+    background-color: #e4e4e4;
+    width:100%;
+
+  padding:10px;
+}
+ul{
+    
+   margin:0 auto;
+    text-align: left;
+    line-height: 1.6;
+}
+
+li{
+    width:350px;
+    margin:0 auto;
+    text-align: left;
+    color:#c7c7c7;
+}
+
+@media(max-width:400px){
+    li{
+        width:auto;
+        margin:0;
+    }
+}
+
+a:visited{
+    color: #727272;
+}
+
+h3{
+    color: #afafaf;
+    font-size: 1.3rem;
+}
+
+
+** end of undefined **
+
