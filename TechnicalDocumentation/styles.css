@@ -7,15 +7,16 @@
 .side-bar{
     margin:0;
     width:300px;
-    background-color: aqua;
+    background-color: rgb(219, 219, 219);
     height:100%;
     position:fixed;
     overflow: auto;
+    border-right: 2px solid black;
 }
 .content{
     height:1000px;
-    margin-left:300px;
-    background-color: rgb(168, 140, 105);
+    margin:0px 20px 20px 320px;
+    background-color: rgb(255, 255, 255);
     padding:20px;
 }
 
@@ -32,7 +33,6 @@
     .content{
         margin-left: 0;
         padding-top: 220px;
-        background-color: rgb(168, 140, 105);
     }
     .nav-header{
         text-align: center;
