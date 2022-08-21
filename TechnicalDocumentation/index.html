@@ -1,105 +1,113 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FreeCodeCamp_Technical_Documentation_Page</title>
 </head>
+
 <body>
 
-<div class="side-bar">
-  
-       <nav id="navbar">
-        <header class="nav-header">CSS Grid Layout</header>
-        <frame>
-        <a class="nav-link" href="#Grid_Layout">Grid Layout</a>
-        <a class="nav-link" href="#Display_Property">Disply Property</a>
-        <a class="nav-link" href="#Grid_Properties">Grid Properties</a>   
-        <a class="nav-link" href="#Grid_Column_Property">Grid-Column Property</a>
-        <a class="nav-link" href="#Grid_Row_Property">Grid-Row Property</a>   
-    </frame>
-       </nav>
-  
-</div>
-<div class="content">
-    <main id="main-doc">
-<!--p x 10, code X 5, li X 5,-->
-<section class="main-section" id="Grid_Layout">
-    <header>Grid Layout</header>
-    <p>The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design web pages without having to use floats and positioning.</p>
-    <p>A grid layout consists of a parent element, with one or more child elements.</p>
-  
-</section>
-<section class="main-section" id="Display_Property">
-    <header>Display Property</header>
-    <p>An HTML element becomes a grid container when its display property is set to grid or inline-grid.</p>
-    <div class="example-box">
-    <h3>Example</h3>
-    <pre>
+    <div class="side-bar">
+
+        <nav id="navbar">
+            <header class="nav-header">CSS Grid Layout</header>
+            <frame>
+                <a class="nav-link" href="#Grid_Layout">Grid Layout</a>
+                <a class="nav-link" href="#Display_Property">Display Property</a>
+                <a class="nav-link" href="#Grid_Properties">Grid Properties</a>
+                <a class="nav-link" href="#Grid_Column_Property">Grid Column Property</a>
+                <a class="nav-link" href="#Grid_Row_Property">Grid Row Property</a>
+            </frame>
+        </nav>
+
+    </div>
+    <div class="content">
+        <main id="main-doc">
+            <!--p x 10, code X 5, li X 5,-->
+            <section class="main-section" id="Grid_Layout">
+                <header>Grid Layout</header>
+                <p>The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier
+                    to design web pages without having to use floats and positioning.</p>
+                <p>A grid layout consists of a parent element, with one or more child elements.</p>
+                    <p>A css grid system create a structure that allows for content to be stacked both vertically and horizontally in a consistent and easily manageable fashion. Grid and flexbox can act in similar ways. You may have seen people using flexbox to construct grid systems but that's not what flexbox was designed for.</p>
+            </section>
+            <section class="main-section" id="Display_Property">
+                <header>Display Property</header>
+                <p>An HTML element becomes a grid container when its display property is set to grid or inline-grid.</p>
+                <div class="example-box">
+                    <h3>Example</h3>
+                    <pre>
     <code>.grid-container {
         display: grid;
       }</pre></code>
-      </div>
-</section>
-<section class="main-section" id="Grid_Properties">
-    <header>Grid Properties</header>
-    <ul>
-    <li>Property	Description
-   <li> <code>column-gap	- Specifies the gap between the columns</li>
+                </div>
+            </section>
+            <section class="main-section" id="Grid_Properties">
+                <header>Grid Properties</header>
+                <ul>
+                    <li>Property Description
+                    <li> <code>column-gap	- Specifies the gap between the columns</li>
    <li> <code>gap	</code>- A shorthand property for the row-gap and the column-gap properties</li>
-   <li> <code>grid	</code>- A shorthand property for the grid-template properties</li>
-   <li> <code>grid-area </code> - Specifies a name for the grid item, or this property is a shorthand property</li>
-   <li> <code>grid-auto-columns </code>- Specifies a default column size</li>
-   </ul>
-   
-</section>
+                    <li> <code>grid	</code>- A shorthand property for the grid-template properties</li>
+                    <li> <code>grid-area </code> - Specifies a name for the grid item, or this property is a shorthand
+                        property</li>
+                    <li> <code>grid-auto-columns </code>- Specifies a default column size</li>
+                </ul>
 
-<section class="main-section" id="Grid_Column_Property">
-    <header>Grid-Column Property:</header>
-    <p>The grid-column property defines on which column(s) to place an item.
+            </section>
 
-        You define where the item will start, and where the item will end.</p>
-        <div class="example-box">
-    <h3>Example</h3>
-    <p>Make "item1" start on column 1 and end before column 5:</p>
-    <pre>
+            <section class="main-section" id="Grid_Column_Property">
+                <header>Grid Column Property</header>
+                <p>The grid-column property defines on which column(s) to place an item.
+
+                    You define where the item will start, and where the item will end.</p>
+                <div class="example-box">
+                    <h3>Example</h3>
+                    <p>Make "item1" start on column 1 and end before column 5:</p>
+                    <pre>
     <code>.item1 {
         grid-column: 1 / 5;
       }
       </pre></code>
-        </div>
-        <div class="example-box">
-      <h3>Example</h3>
-      <p>Make "item2" start on column 2 and span 3 columns:</p>
-      <pre>
+                </div>
+                <div class="example-box">
+                    <h3>Example</h3>
+                    <p>Make "item2" start on column 2 and span 3 columns:</p>
+                    <pre>
       <code>.item2 {
         grid-column: 2 / span 3;
-      }</pre></code></div>
-</section>
-<section class="main-section" id="Grid_Row_Property">
-    <header><Grid-Row></Grid-Row> Property:</header>
-    <p>The grid-row property defines on which row to place an item.
+      }</pre></code>
+                </div>
+            </section>
+            <section class="main-section" id="Grid_Row_Property">
+                <header>Grid Row Property</header>
+                <p>The grid-row property defines on which row to place an item.
 
-    You define where the item will start, and where the item will end.</p>
-    <div class="example-box">
-    <h3>Example</h3>
-    <p>Make "item1" start on row-line 1 and end on row-line 4:</p>
-    <pre>
+                    You define where the item will start, and where the item will end.</p>
+                <div class="example-box">
+                    <h3>Example</h3>
+                    <p>Make "item1" start on row-line 1 and end on row-line 4:</p>
+                    <pre>
     <code>.item1 {
         grid-row: 1 / 4;
       }
-      </pre></code></div>
-      <div class="example-box">
-      <h3>Example</h3>
-      <p>Make "item1" start on row 1 and span 2 rows:</p>
-      <pre>
+      </pre></code>
+                </div>
+                <div class="example-box">
+                    <h3>Example</h3>
+                    <p>Make "item1" start on row 1 and span 2 rows:</p>
+                    <pre>
       <code>.item2 .item1 {
         grid-row: 1 / span 2;
-      }</pre></code></div>
-</section>
+      }</pre></code>
+                </div>
+            </section>
 
-    </main>
-</div>
-   
+        </main>
+    </div>
+
 </body>
+
 </html>
