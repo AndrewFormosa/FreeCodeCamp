@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    border:1px solid green;
 
 }
 
@@ -10,7 +11,11 @@ html{
 }
 
 #header{
+    position: sticky;
+    top:0;
+    left:0;
 display:flex;
+width:100%;
 background-color: black;
 margin-bottom: 20px;
 
@@ -20,7 +25,8 @@ margin-bottom: 20px;
     text-decoration: none;
     color:white;
    font-weight: bold;
-    display: flex;
+  margin-top: auto;
+  margin-bottom: auto;
     padding-left:10px;
     padding-right:10px;
     border-right:1px solid white;
@@ -29,8 +35,11 @@ margin-bottom: 20px;
 }
 
 .nav-bar{
-   display: flex;
-   justify-content: right;
+display:flex;
+width:80%;
+justify-content: flex-end;
+
+   
 }
 
 .nav-link:hover{
@@ -46,7 +55,7 @@ margin-bottom: 20px;
 display: flex;
 flex-direction: column;
 padding:10px auto;
-justify-content: center;
+
 }
 
 legend{
@@ -57,8 +66,13 @@ legend{
     margin:0 auto;   
 }
 
-p,h1{
+p, legend{
     text-align: center;
+    margin-top: 10px;
+}
+h1{
+    text-align: center;
+    margin-top:40px;
 }
 
 .flex-container{
@@ -75,4 +89,22 @@ p,h1{
     min-width:200px;
     height:180px;
     margin:10px;
+}
+.new-service{
+    margin:20px;
+    display: block;
+    width:250px;
+    height:250px;
+    background-color: rgb(214, 214, 214);
+}
+
+.service-image{
+    width:250px;
+    height:200px;
+}
+.service-description{
+    display: block;
+    margin-top:13px;
+  text-align: center;
+
 }
