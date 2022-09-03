@@ -111,23 +111,35 @@ background-color:var(--shadeOfBlue);
 }
 
 section{
-    margin:110px auto 1px auto;
+    margin:110px auto 50px auto;
+    padding:40px;
     background-color: var(--darkerGrey); 
     border-radius: 10px;
     width:80%;
+    min-width:550px;
 }
 
+#welcome-section{
+height: 100vh;
+}
+
+h1 { 
+    font-weight: normal;
+    font-size: 5rem; 
+}
 .myName{
+    display: block;
+    margin:200px auto;
     text-align: center;
     border-style:none;
     height:auto;
-    padding:2rem;
+   
 }
 
-.myName > p{
-    font-size: 4rem;
-}
 .myName>i{
+    display:block;
+    margin:0 auto;
+    width:50%;
     font-size: 1.3rem;
     color: wheat;
 }
@@ -141,44 +153,52 @@ section{
     vertical-align: middle;
 }
 
+.myProjects>.selectable{
+    margin:20px;
+    border-radius: 10px;
+    background-color:black;
+    position: relative;
+    min-width: 300px;
+    min-height:300px;     
+   
+}
+
 img{
+    position: absolute;  
+
+    padding:10px;
     width:100%;
     height:100%;
 }
 legend{
-    display: inline-block;
+    border-radius: 20px;
+position: absolute;
+display: flex;
+padding: 10px;
    text-align: center;
-    border:1px solid green;
-    position: relative;
-    top:-150;
-    width: auto;
-    height:auto;
-    margin:0 auto;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+   color:transparent;
+   transition-duration: 0.5s;
     
 }
 
-
-
-.myProjects>.selectable{
-    border:2px solid green;
-    padding:20px;
-    width: 300px;
-    height:300px;     
-    color:transparent;
-}
-
-.myProjects>.selectable:hover{
-    padding:10px;
-    width: 300px;
-    height:300px;     
+.myProjects>.selectable>legend:hover{
+    
+    transition-duration: 0.5s;
+    border-radius: 20px;
+   background-color:black;
+   opacity: 0.9;
     color: white;
+    font-weight: bold;
 }
 
-.myProjects>.selectable>img:hover{
- opacity: 20%;
-}
 
-h1{
+
+
+h2{
+   
     font-size: 2rem;
     font-weight: normal;
     text-align: center;
