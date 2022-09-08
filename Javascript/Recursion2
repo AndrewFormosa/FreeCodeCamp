@@ -1,0 +1,18 @@
+function rangeOfNumbers(startNum, endNum) {
+
+    if(startNum)
+    {
+        return [];
+    }else
+    {      
+        const myArray=rangeOfNumbers(startNum,endNum-1);
+        myArray.push(endNum);
+        return myArray;
+    }
+}
+
+console.log(rangeOfNumbers(2,5));
+
+//const countArray = countup(n - 1);
+//countArray.push(n);
+//return countArray;//
